@@ -2,8 +2,8 @@ package com.powtorka;
 
 public class Main {
     public static void main(String[] args) {
-        Pies wilczur = new Pies();
-        Pies jamnik = new Pies();
+        Pies0 wilczur = new Pies0();
+        Pies0 jamnik = new Pies0();
 
         jamnik.setName("Szarik");
         wilczur.setName("Azur");
@@ -15,41 +15,41 @@ public class Main {
         jamnik.jedz();
         wilczur.jedz();
 
-        Pies burek = new Pies();
-        Pies pudel;
-        Pies husky =  new Pies("Dominik",70.0);
-        jamnik = new Pies(20.0, "bialy");
-        Pies wilk = new Pies(husky);
+        Pies0 burek = new Pies0();
+        Pies0 pudel;
+        Pies0 husky =  new Pies0("Dominik",70.0);
+        jamnik = new Pies0(20.0, "bialy");
+        Pies0 wilk = new Pies0(husky);
 
 
     }
 }
 
-class Pies {
+class Pies0 {
     private String name;
     private double energia;
     private String umaszczenie;
 
-    public Pies() {
+    public Pies0() {
         energia = 50.0;
     }
 
-    public Pies(Pies source) {
+    public Pies0(Pies0 source) {
      this.umaszczenie = source.umaszczenie;
      this.energia = source.energia;
      this.name = source.name;
     }
 
-    public Pies(double energiaPoczatkowa) {
+    public Pies0(double energiaPoczatkowa) {
         this.energia = energiaPoczatkowa;
     }
 
-    public Pies(String name, double energia) {
+    public Pies0(String name, double energia) {
         this.name = name;
         this.energia = energia;
     }
 
-    public Pies(double energiaPoczatkowa, String umaszczenie) {
+    public Pies0(double energiaPoczatkowa, String umaszczenie) {
         this.energia = energiaPoczatkowa;
         this.umaszczenie = umaszczenie;
     }
